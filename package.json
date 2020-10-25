@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "commander": "6.2.0",
+    "crocks": "^0.12.4"
+  }
+}
