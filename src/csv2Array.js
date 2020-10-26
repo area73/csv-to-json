@@ -4,9 +4,9 @@ const {fmap,ifDebug} = require("./utils")
 
 const removeDoubleQuotes = item => item.replace(/"/g, "");
 const str2arr = match => item => item.match(match);
-const str2arrByDoubleQuotes = item => str2arr(/("[^"]*")|[^,]+/g)(item);
-const str2arrByNewLine = item => str2arr(/[^\r\n]+/g)(item);
-const str2arrByComas = item => str2arr(/[^,]+/g)(item);
+const str2arrByDoubleQuotes = str2arr(/("[^"]*")|[^,]+/g);
+const str2arrByNewLine = str2arr(/[^\r\n]+/g);
+const str2arrByComas = str2arr(/[^,]+/g);
 const destructureSingleArr = item => (item.length > 1 ? item : item[0]);
 
 

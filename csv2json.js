@@ -1,5 +1,5 @@
 const { program } = require('commander');
-program.version('0.0.1');
+program.version('0.0.2');
 
 program
 .option('-d, --debug', 'output extra debugging')
@@ -21,7 +21,6 @@ const configFile = "utf-8";
 const { Async } = require("crocks");
 // ----[3]-------
 const pipe = require("crocks/helpers/pipe");
-const tap = require("crocks/helpers/tap");
 const {csv2array} = require('./src/csv2Array');
 const {array2Json} = require('./src/array2Json')
 
